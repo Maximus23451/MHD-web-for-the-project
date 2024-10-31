@@ -1,0 +1,81 @@
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Midnight blue */
+    margin: 0;
+    padding: 0;
+    animation: nightTransition 10s infinite alternate; /* Adjust timing */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #16213e; /* Midnight blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styling */
+main {
+    padding: 10px;
+    flex: 1;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #273c75; /* Darker blue */
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(22, 33, 62, 0.8); /* Transparent midnight blue */
+    color: #fff;
+    text-align: center;
+    padding: 5px; /* Reduced padding */
+    font-size: 0.85em; /* Slightly smaller font size */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+video {
+    width: 80%; /* Adjusts the width to 80% of the container */
+    max-width: 600px; /* Limits the max width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Optional: rounds the corners slightly */
+    display: block;
+    margin: 0 auto; /* Centers the video */
+}
+
+
+/* Animation for background color transition */
+@keyframes nightTransition {
+    0% { background-color: #1a1a2e; } /* Midnight blue */
+    50% { background-color: #341f97; } /* Purple */
+    100% { background-color: #1a1a2e; } /* Midnight blue */
+}
