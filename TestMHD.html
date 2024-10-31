@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Website</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e; /* Midnight blue */
+            margin: 0;
+            padding: 0;
+            animation: nightTransition 10s infinite alternate; /* Adjust timing */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #16213e; /* Midnight blue */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 10px;
+            flex: 1;
+        }
+
+        section {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #273c75; /* Darker blue */
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: rgba(22, 33, 62, 0.8); /* Transparent midnight blue */
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-size: 0.85em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        video {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @keyframes nightTransition {
+            0% { background-color: #1a1a2e; } /* Midnight blue */
+            50% { background-color: #341f97; } /* Purple */
+            100% { background-color: #1a1a2e; } /* Midnight blue */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+          <section id="welcome">
+            <h2>Welcome!</h2>
+            <p>This is the welcoming page of my website. Click below to enter:</p>
+            <a href="#home" class="home-link">Enter Home</a>
+        </section>
+
+        <section id="home" style="display: none;">
+            <h2>Home</h2>
+            <p>This is the home section of my website.</p>
+        </section>
+
+        <section id="about" style="display: none;">
+            <h2>About</h2>
+            <p>This is a website for our project. MHD is short for Micro Hard Door.</p>
+            <p>Contributors for the project: Pedro,Kuci,Zubi</p>
+        </section>
+
+        <section id="github-link" style="display: none;">
+            <h2>Visit Our GitHub Pages</h2>
+            <ul>
+                <li><a href="#" id="github-pedro">Pedro's GitHub</a></li>
+                <li><a href="#" id="github-kuci">Kuci's GitHub</a></li>
+                <li><a href="#" id="github-zubi">Zubi's GitHub</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" style="display: none;">
+            <h2>Contact</h2>
+            <p>Our contacts.</p>
+            <p>Discord:</p>
+            <p>(Pedro): pedromax222 (Kuci): _syst3m_err0r_ (Zubi): mateu4482</p>
+            <p>And my Email:</p>
+            <p>szabomarci0309@gmail.com</p>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 By your friendly neighbor ChatGPT ❤️</p>
+    </footer>
+
+    <script>
+        // JavaScript Code
+document.addEventListener("DOMContentLoaded", function() {
+    // Existing code for showing sections
+    document.querySelector(".home-link").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("welcome").style.display = "none";
+        document.getElementById("home").style.display = "block";
+        document.getElementById("about").style.display = "block";
+        document.getElementById("contact").style.display = "block";
+
+        // Show the GitHub links
+        document.getElementById("github-link").style.display = "block";
+    });
+
+    // Code to handle GitHub link clicks and open in a new window
+    document.getElementById("github-pedro").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.open("https://github.com/Maximus23451", "_blank"); // Replace with Pedro's GitHub URL
+    });
+
+    document.getElementById("github-kuci").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.open("https://github.com/zoligamer", "_blank"); // Replace with Kuci's GitHub URL
+    });
+
+    document.getElementById("github-zubi").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.open("https://github.com/mateszornyu", "_blank"); // Replace with Zubi's GitHub URL
+    });
+});
+    </script>
+
+            <!--<video controls>
+                <source src="D:\all_sandisk_128gb\webpage\boom.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+
+</body>
+</html>
