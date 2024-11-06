@@ -1,4 +1,4 @@
-THIS IS AN OUT DATED PROJECT!!
+THIS IS AN OUTDATED PROJECT!!
 
 Here is the current on: https://github.com/Maximus23451/website
 
