@@ -1,8 +1,8 @@
 THIS IS A OUT DATED PROJECT!!
 
 Here is the current on: https://github.com/Maximus23451/website
-                       
-                        https://maximus23451.github.io/website/#Home
+
+This is the website for the new project: https://maximus23451.github.io/website/#Home
 
 
 
